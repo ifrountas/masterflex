@@ -1,0 +1,345 @@
+    /* General Variables */
+
+	:root,
+    .sm {
+        --red                 : 202,  28,  37;
+        --green               : 183, 191,  29;
+        --blue                :  68,  53, 255;
+        --white               : 255, 255, 255;
+        --gray-light          : 200, 200, 200;
+        --gray-light-x        : 230, 230, 230;
+        --gray                : 100, 100, 100;
+        --black               :  21,  21,  21;
+        --orange              : 255, 185, 101;
+
+        --color-red           : rgb(var(--red));
+        --color-green         : rgb(var(--green));
+        --color-blue          : rgb(var(--blue));
+        --color-white         : rgb(var(--white));
+        --color-gray-light    : rgb(var(--gray-light));
+        --color-gray-light-x  : rgb(var(--gray-light-x));
+        --color-gray          : rgb(var(--gray));
+        --color-black         : rgb(var(--black));
+        --color-orange        : rgb(var(--orange));
+
+        --color-text          : var(--color-black); 
+        --color-text-link     : var(--color-orange); 
+
+        --font-scale          : 1.1;
+        
+        --root-font-size      : 10px;
+        --base-font-size      : 1.6rem;
+        --base-line-height    : 1.5;
+        --text-line-height    : 1.5;
+        --heading-line-height : 1.3;
+
+        --container-width     : 1024px;
+        --container-fluid     : 100%;
+
+        --grid-gutter         : 1em;  
+        --half-grid-gutter    : calc((var(--grid-gutter) * 0.5));
+        --gutter-compensation : calc((var(--grid-gutter) * 0.5) * -1);
+        --vertical-rhythm     : 3em;
+        
+        --font-sans-serif     : 'Inter var', Arial, sans-serif;
+        --font-monospace      : Consolas, 'Courier New', monospace;
+        --font-icon           : 'IcoFont' !important;
+
+    }
+
+    .tab {
+        --font-scale          : 1.125;
+        --base-font-size      : 1.5rem;
+        --base-line-height    : 1.5;
+        --text-line-height    : 1.6;
+        --heading-line-height : 1.25;
+
+        --text-rhythm         : 3rem;
+        --grid-gutter         : 1.5em;
+        --vertical-rhythm     : 4rem;
+    }
+
+    .lap {
+        --font-scale          : 1.15;
+        --base-font-size      : 1.6rem;
+        --base-line-height    : 1.5;
+        --text-line-height    : 1.7;
+        --heading-line-height : 1.2;
+
+        --text-rhythm         : 5rem;
+        --grid-gutter         : 2em;
+        --vertical-rhythm     : 5rem;
+    }
+    
+    /* Set up the colors */
+
+    .color__red {
+    	color: var(--color-red);
+    }
+
+    .color__green {
+        color: var(--color-green);
+    }
+
+    .color__blue {
+        color: var(--color-blue);
+    }
+
+    .color__white {
+        color: var(--color-white);
+    }
+    
+    .color__gray-light {
+        color: var(--color-gray-light);
+    }
+
+    .color__gray-light-x {
+        color: var(--color-gray-light-x);
+    }
+
+    .color__gray {
+        color: var(--color-gray);
+    }
+
+    .color__black {
+        color: var(--color-black);
+    }
+
+    .color__orange {
+        color: var(--color-orange);
+    }
+     
+
+    /* Set up the background colors */
+
+    .bg__red {
+        background: var(--color-red);
+    }
+
+    .bg__green {
+        background: var(--color-green);
+    }
+
+    .bg__blue {
+        background: var(--color-blue);
+    }
+
+    .bg__white {
+        background: var(--color-white);
+    }
+    
+    .bg__gray-light {
+        background: var(--color-gray-light);
+    }
+
+    .bg__gray-light-x {
+        background: var(--color-gray-light-x);
+    }
+
+    .bg__gray {
+        background: var(--color-gray);
+    }
+
+    .bg__black {
+        background: var(--color-black);
+    }
+
+    .bg__orange {
+        background: var(--color-orange);
+    }
+
+
+ 	/* The panel that restrains contents to a maximum width */
+
+    .container {
+        box-sizing: border-box;
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: var(--half-grid-gutter, 8px);
+        padding-left: var(--half-grid-gutter, 8px);
+    }
+
+    .container-fluid {
+        padding-right: var(--half-grid-gutter, 8px);
+        padding-left: var(--half-grid-gutter, 8px);
+    }
+
+    /* Global base stylings */
+
+    html {
+        font-size: var(--root-font-size);
+    }
+
+    body {
+        font-family: var(--font-sans-serif);
+        font-size: var(--base-font-size);
+        color: var(--color-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-sans-serif);
+        line-height: var(--heading-line-height);
+        font-weight: 900;
+    }
+
+    h1 {
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    }
+
+    h2 {
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    }
+
+    h3 {
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    }
+
+    h4 {
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    }
+
+    h5 {
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale));
+    }
+
+    h6 {
+        font-size: calc(var(--base-font-size) * var(--font-scale));
+    }
+
+    .base__font {
+        font-family: var(--font-sans-serif);
+        line-height: var(--text-line-height);
+    }
+
+    [class*="entry-"] {
+        line-height: var(--text-line-height);
+    }
+
+    [class*="entry-"]>h1+*,
+    [class*="entry-"]>h2+*,
+    [class*="entry-"]>h3+*,
+    [class*="entry-"]>h4+*,
+    [class*="entry-"]>h5+*,
+    [class*="entry-"]>h6+* {
+        margin-top: calc(.333*var(--text-rhythm));
+    }
+
+    [class*="entry-"]> * + * {
+        margin-top: calc(var(--text-rhythm)/2);
+    }
+    
+    [class*="entry-"] p {
+        font-weight: 300;
+    }
+
+    [class*="entry-"] ul li {
+        padding-bottom: 1.5rem;
+    }
+
+    .font__weight-900 {
+        font-weight: 900;
+    }
+
+    a {
+        color: var(--color-text-link);
+    }
+
+    ::selection {
+        background-color: var(--color-blue);
+        color: var(--color-white);
+    }
+
+    .post-thumbnail img,
+    .lazyload {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img[src=""] {
+        opacity: 0;
+    }
+    
+    img:not([src=""]) {
+        transition: opacity 0.7s linear 0.2s;
+        opacity: 1;
+    }
+    
+    .btn {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: 0 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        text-align: center;
+        font-family: var(--font-sans-serif);
+        font-weight: 700;
+        line-height: 1.28571429;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-rendering: optimizeLegibility;
+        padding: 19px 40px 20px;
+        display: inline-block;
+        white-space: nowrap;
+        flex-basis: auto;
+        width: auto;
+        transition: box-shadow 420ms cubic-bezier(.165,.84,.44,1),color 420ms cubic-bezier(.165,.84,.44,1),background 420ms cubic-bezier(.165,.84,.44,1);
+        background-color: transparent;
+        color: var(--color-blue);
+        fill: var(--color-blue);
+        box-shadow: inset 0 0 0 1px var(--color-blue);
+    }
+
+    .btn:hover {
+        box-shadow: inset 0 0 0 2px var(--color-blue);
+        background-color: var(--color-blue);
+        color: var(--color-white);
+    }
+
+    /* Usefull styles */
+
+    pre {
+        background: rgb(245, 245, 245);
+        padding: 0.5rem 1rem;
+        border: 1px dotted rgb(165, 165, 165);
+    }
+
+    code {
+        background: rgb(245, 245, 245);
+        padding: 0 0.5rem;
+        border: 1px solid rgb(165, 165, 165);
+        border-radius: 3px;
+    }
+
+    @font-face {
+        font-family: 'IcoFont';
+        font-style: normal;
+        font-weight: 400;
+        src: 
+          url('../fonts/icofont.woff2') format('woff2'),
+          url('../fonts/icofont.woff') format('woff');
+    }
+       
+    $icofont: 'IcoFont' !important;
+       
+    $fonts: (
+        'IcoFont': $icofont,
+    );
+      
+    [class^="icofont-"],
+    [class*=" icofont-"] {
+        font-family: $icofont;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        line-height: 1;
+        font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
+    }

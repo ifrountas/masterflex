@@ -1,0 +1,24 @@
+.social ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+	.social ul li a {
+		font-size: 20px;
+	}
+
+.site__title-text a,
+.social ul li a {
+	text-decoration: none;
+}
+
+
+/* Only stick if you can fit */
+@media (min-height: 800px) {
+	.main__header {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+}

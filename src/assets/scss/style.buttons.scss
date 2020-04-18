@@ -21,15 +21,26 @@
         width: auto;
         transition: box-shadow 420ms cubic-bezier(.165,.84,.44,1),color 420ms cubic-bezier(.165,.84,.44,1),background 420ms cubic-bezier(.165,.84,.44,1);
         background-color: transparent;
-        color: var(--color-blue);
-        fill: var(--color-blue);
-        box-shadow: inset 0 0 0 1px var(--color-blue);
+        color: inherit;
+        fill: inherit;
+        box-shadow: inset 0 0 0 1px inherit;
+        color: var(--color-white);
     }
 
-    .btn {
+    .btn:hover {
+        color: var(--color-orange);
+        box-shadow: inset 0 0 0 2px currentColor!important;
+        background-color: transparent!important;
+    }
+
+    .btn.blue {
         box-shadow: inset 0 0 0 2px var(--color-blue);
         background-color: var(--color-blue);
-        color: var(--color-white);
+    }
+
+    .btn.red {
+        box-shadow: inset 0 0 0 2px var(--color-red);
+        background-color: var(--color-red);
     }
 
     .btn.small {

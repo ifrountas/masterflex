@@ -3,4 +3,3 @@ theme_versions
 gulpfile.babel.js
 .DS_Store
 .babelrc
-package-lock.json

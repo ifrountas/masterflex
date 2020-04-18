@@ -1,0 +1,62 @@
+.ac {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+  
+    > .ac-q {
+        font-family: var(--font-sans-serif);
+        font-weight: 700;
+        color: var(--color-text);
+        padding: 10px 30px 10px 10px;
+        margin: 0;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        position: relative;
+  
+        &::after {
+            content: '+';
+            text-align: center;
+            width: 15px;    
+            right: 10px;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+        }
+    }
+  
+    // Answer class
+    > .ac-a {
+        overflow: hidden;
+        transition-property: all;
+        transition-timing-function: ease;
+  
+        p {
+            font-family: var(--font-sans-serif);  
+            color: #777;
+            margin: 0;
+            padding: 10px;
+        }   
+    }
+  
+    // Hide content when Javascript is enabled
+    &.js-enabled {
+        > .ac-a {
+            visibility: hidden;
+        }
+    }
+  
+    // Active class
+    &.is-active {
+        > .ac-a {
+            visibility: visible;
+        }
+  
+        > .ac-q {
+            &::after {
+                content: '\2013';
+            }       
+        }
+    }
+}

@@ -151,17 +151,3 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
-
-
-function after_pagination() {
-	echo '<h1>IAKOVOS 1</h1>';
-}
-
-function after_pagination_two() {
-	echo '<h1>IAKOVOS 2</h1>';
-}
-
-
-add_action('myfirsttheme_after_pagination', 'after_pagination', 1);
-
-add_action('myfirsttheme_after_pagination', 'after_pagination_two', 2);

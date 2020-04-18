@@ -266,7 +266,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/wp-content/themes/firsttheme/src/assets/js/wp-color-picker-alpha.js */"./src/assets/js/wp-color-picker-alpha.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\myfirsttheme\wp-content\themes\myfirsttheme\src\assets\js\wp-color-picker-alpha.js */"./src/assets/js/wp-color-picker-alpha.js");
 
 
 /***/ })

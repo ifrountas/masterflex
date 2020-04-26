@@ -1,55 +1,88 @@
-	.horizontal__nav {
+	.main-navigation {
 		position: relative;
 		display: flex;
 		justify-content: flex-end;
+		padding-left: 0;
+		list-style-type: none;
 	}
 
-	.horizontal__nav ul li {
+	.main-navigation li {
 		display: inline-flex;
 	}
 	
-	.sub-menu {
-		display: none;
+	.main-navigation .sub-menu {
+		background: #000;
+		border-radius: 0.4rem;
+		color: #fff;
+		font-size: 1.7rem;
+		opacity: 0;
+		padding: 1rem 0;
+		position: absolute;
+		right: 9999rem;
+		top: calc(100% + 2rem);
+		transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
+		transform: translateY(0.6rem);
+		width: 20rem;
+		z-index: 1;
+	}
+	
+	.main-navigation ul:before {
+		height: 2rem;
+		left: 0;
+		right: 0;
+	}
+	
+	.main-navigation ul:before, .main-navigation ul:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+	}
+	
+	.main-navigation ul::after {
+		border: 0.8rem solid transparent;
+		border-bottom-color: #000;
+		right: 1.8rem;
 	}
 
-	.sub-menu {
-	    position: absolute;
-	    left: 0;
-	    top: 100%;
-	    z-index: 9999;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    top: calc(100% + .5rem);
-	    left: -1.5rem;
-	    padding: 1rem 1.5rem;
-	    border-radius: .3rem;
-	    box-shadow: 0 0 0 1px var(--color-gray-light-x);
-	    z-index: 1;
+	.main-navigation ul a {
+		background: transparent;
+		border: none;
+		color: inherit;
+		display: block!important;
+		padding: 1rem 2rem;
+		transition: background-color 0.15s linear;
+	}
+	
+	.navigation ul li {
+		position: relative;
 	}
 
-		.navigation ul {
-			padding-left: 0;
-			list-style-type: none;
-		}
+	.navigation ul.sub-menu li {
+		display: block;
+	}
+	
+	.navigation ul li a {
+		margin: 0;
+		padding: 1rem 1.2rem;
+		text-decoration: none;
+		font-family: var(--font-sans-serif);
+		font-weight: 300;
+		color: var(--color-white);
+		transition: background-color 277ms cubic-bezier(0.4, 0, 1, 1);
+	}
+	
+	.navigation ul li a:hover {
+		background-color: var(--color-black);
+		transition: background-color 277ms cubic-bezier(0.4, 0, 1, 1);
+	}
 
-			.navigation ul li {
-				position: relative;
-			}
-
-				.navigation ul li a {
-					margin: 0;
-					padding: 1rem 0.75rem;
-					text-decoration: none;
-					font-family: var(--font-sans-serif);
-					font-weight: 300;
-					color: var(--color-white);
-					transition: background-color 277ms cubic-bezier(0.4, 0, 1, 1);
-				}
-
-					.navigation ul li a:hover {
-						background-color: var(--color-black);
-						transition: background-color 277ms cubic-bezier(0.4, 0, 1, 1);
-					}
-
-
+	li.menu-item-has-children:hover .sub-menu {
+		right: 0;
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity 0.15s linear, transform 0.15s linear;
+	}
+	
+	
+	

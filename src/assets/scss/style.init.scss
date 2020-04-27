@@ -181,6 +181,9 @@
         font-family: var(--font-sans-serif);
         line-height: var(--heading-line-height);
         font-weight: 900;
+        font-feature-settings: "lnum";
+        font-variant-numeric: slashed-zero;
+        letter-spacing: -.0415625em;
     }
 
     h1 {

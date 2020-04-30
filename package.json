@@ -29,7 +29,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-zip": "^5.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazyload": "^2.0.0-rc.2",
     "micromodal": "^0.4.6",
     "node-sass": "^4.13.1",

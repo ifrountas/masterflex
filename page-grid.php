@@ -33,30 +33,20 @@ get_header();
 			?>
 
 			</main><!-- #main -->
-			<div class="col-sm-12">
-				<div class="bg__red">
-					<h4 class="color__white">Something special</h4>
-				</div>
+			<div class="col-sm-12 grid__box">
+				<p class="color__white">Something special</p>
 			</div>
-			<div class="col-sm-6 col-mob-6 col-tab-4 col-lap-9 col-lg-3 col-xl-3">
-				<div class="bg__red">
-					<h4 class="color__white grid__box">Column</h4>
-				</div>
+			<div class="col-sm-6 col-mob-6 col-tab-4 col-lap-9 col-lg-3 col-xl-3 grid__box">
+				<p class="color__white">One of four columns</p>
 			</div>
-			<div class="col-sm-6 col-mob-6 col-tab-4 col-lap-9 col-lg-3 col-xl-3">
-				<div class="bg__red">
-					<h4 class="color__white grid__box">Column</h4>
-				</div>
+			<div class="col-sm-6 col-mob-6 col-tab-4 col-lap-9 col-lg-3 col-xl-3 grid__box">
+				<p class="color__white">One of four columns</p>
 			</div>
-			<div class="col-sm-6 col-mob-6 col-tab-4 col-lap-9 col-lg-3 col-xl-3">
-				<div class="bg__red">
-					<h4 class="color__white grid__box">Column</h4>
-				</div>
+			<div class="col-sm-6 col-mob-6 col-tab-4 col-lap-9 col-lg-3 col-xl-3 grid__box">
+				<p class="color__white">One of four columns</p>
 			</div>
-			<div class="col-sm-6 col-mob-6 col-tab-8 col-lap-3 col-lg-9 col-xl-3">
-				<div class="bg__blue">
-					<h4 class="color__white grid__box">Column</h4>
-				</div>
+			<div class="col-sm-6 col-mob-6 col-tab-8 col-lap-3 col-lg-9 col-xl-3 grid__box">
+				<p class="color__white">One of four columns</p>
 			</div>
 		</div>
 	</div><!-- #primary -->

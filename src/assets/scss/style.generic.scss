@@ -1,5 +1,8 @@
 .grid__box {
-	padding: var(--vertical-rhythm) 0;
+	padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(68, 53, 255, 0.7);
+    border: 1px solid rgba(68, 53, 255, 1);
 }
 
 .main__header {

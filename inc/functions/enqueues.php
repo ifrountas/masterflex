@@ -7,7 +7,7 @@
      */
 	function myfirsttheme_register_fonts() {
 
-        wp_register_style( 'myfirsttheme-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap', array(), '', 'all' );
+        wp_register_style( 'myfirsttheme-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,500&display=swap', array(), '', 'all' );
 	}
 
 	add_action( 'init', 'myfirsttheme_register_fonts', 1 );

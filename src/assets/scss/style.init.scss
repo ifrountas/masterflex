@@ -41,7 +41,7 @@
         --gutter-compensation : calc((var(--grid-gutter) * 0.5) * -1);
         --vertical-rhythm     : 3em;
         
-        --font-sans-serif     : 'Inter var', Arial, sans-serif;
+        --font-sans-serif     : 'Roboto', sans-serif;
         --font-monospace      : Consolas, 'Courier New', monospace;
         --font-icon           : 'IcoFont' !important;
 
@@ -181,9 +181,6 @@
         font-family: var(--font-sans-serif);
         line-height: var(--heading-line-height);
         font-weight: 900;
-        font-feature-settings: "lnum";
-        font-variant-numeric: slashed-zero;
-        letter-spacing: -.0415625em;
     }
 
     h1 {

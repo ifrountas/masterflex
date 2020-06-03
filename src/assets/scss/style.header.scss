@@ -16,6 +16,13 @@
 	text-decoration: none;
 }
 
+ul.social-icons {
+    padding-left: 0;
+}
+
+.social li.phone {
+    color: var(--color-white);
+}
 
 /* Only stick if you can fit */
 @media (min-height: 800px) {

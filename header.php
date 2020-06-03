@@ -3,8 +3,12 @@
 <!-- PAGE HEADER -->
 
 <section class="top__header bg__black">
-	<div class="social">
-		<?php echo skyrocket_get_social_media(); ?>
+	<div class="container-fluid">
+		<div class="row middle-sm">
+			<div class="col-sm-12 social">
+				<?php echo skyrocket_get_social_media(); ?>
+			</div>
+		</div>
 	</div>
 </section>
 

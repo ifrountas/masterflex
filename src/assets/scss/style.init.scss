@@ -273,6 +273,17 @@
         border: 1px dotted rgb(165, 165, 165);
     }
 
+    blockquote {
+        color: rgba(0,0,0,.8);
+        border: 2px solid #ffedbb;
+        background: #fff4d5;
+        border-radius: 6px;
+        font-weight: 500;
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+        line-height: 1.6;
+    }
+
     @font-face {
         font-family: 'IcoFont';
         font-style: normal;

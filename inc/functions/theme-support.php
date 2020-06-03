@@ -272,7 +272,7 @@
 			if( !empty( $contact_phone ) ) {
 				$output[] = sprintf( '<li class="%1$s"><i class="%2$s"></i>%3$s</li>',
 					'phone',
-					'fas fa-phone fa-flip-horizontal',
+					'icofont-ui-call',
 					$contact_phone
 				);
 			}

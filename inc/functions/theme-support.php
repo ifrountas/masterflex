@@ -31,9 +31,10 @@
 		if ( function_exists( 'the_custom_logo' ) && get_custom_logo() ) {
 	 		$site_title = get_custom_logo();
 		}else {
-			$site_title ='<h1 class="site__title-text">
+			$site_title = '<h1 class="site__title-text">
 							<a class="color__white font__weight-900" href="'.esc_url($site_url).'" title="'.esc_attr($site_name).'">'.esc_html($site_name).'</a>
-						  </h1>'.$site_desc_html;
+						</h1>'
+						.$site_desc_html;
 		}
 
 		return $site_title;

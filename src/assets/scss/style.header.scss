@@ -1,6 +1,8 @@
 .main__header {
 	position: relative;
+	padding: 1rem 0;
 }
+
 .social ul li {
     list-style: none;
     display: inline-block;
@@ -12,10 +14,10 @@
 	}
 
 	.site-logo {
-		padding: 1rem 0;
 
 		.site__title-text {
 			line-height: var(--heading-line-height);
+			font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
 		}
 
 		.site__title-desc {

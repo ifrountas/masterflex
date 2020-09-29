@@ -26,13 +26,14 @@
 		$site_url   = get_bloginfo( 'url' );
 		$site_name  = get_bloginfo( 'name' );
 		$site_desc  = get_bloginfo( 'description' );
+		$site_desc_html = $site_desc ? '<p class="site__title-desc">'.esc_html($site_desc).'</p>' : '';
 
 		if ( function_exists( 'the_custom_logo' ) && get_custom_logo() ) {
 	 		$site_title = get_custom_logo();
 		}else {
 			$site_title ='<h1 class="site__title-text">
-							<a class="base__font color__orange font__weight-900" href="'.$site_url.'" title="'.$site_name.'">'.$site_name.'</a>
-						  </h1>';
+							<a class="color__white font__weight-900" href="'.esc_url($site_url).'" title="'.esc_attr($site_name).'">'.esc_html($site_name).'</a>
+						  </h1>'.$site_desc_html;
 		}
 
 		return $site_title;

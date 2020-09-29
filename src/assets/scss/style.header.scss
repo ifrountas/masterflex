@@ -11,10 +11,23 @@
 		font-size: 20px;
 	}
 
-.site__title-text a,
-.social ul li a {
-	text-decoration: none;
-}
+	.site-logo {
+		padding: 1rem 0;
+
+		.site__title-text {
+			line-height: var(--heading-line-height);
+		}
+
+		.site__title-desc {
+			color: var(--color-white);
+			margin-top: 5px;
+		}
+
+			.site__title-text a,
+			.social ul li a {
+				text-decoration: none;
+			}
+	}
 
 ul.social-icons {
     padding-left: 0;

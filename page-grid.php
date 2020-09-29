@@ -48,6 +48,7 @@ get_header();
 			<div class="col-sm-6 col-mob-6 col-tab-8 col-lap-3 col-lg-9 col-xl-3 grid__box">
 				<p class="color__white">One of four columns</p>
 			</div>
+			
 		</div>
 	</div><!-- #primary -->
 

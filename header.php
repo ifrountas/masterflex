@@ -26,18 +26,7 @@
 			
 			<div class="col-sm-3 col-lap-8">
 
-				<nav class="navigation horizontal__nav mainmenu" aria-label="<?php _e( 'Main navigation', 'myfirsttheme' ); ?>">
-					<?php
-			            wp_nav_menu( array(
-			                'theme_location' => 'main-navigation',
-			                'container'      => 'div',
-			                'menu_class'     => 'main-navigation',
-			                'menu_id'        => 'main-navigation',
-			            ));
-			        ?>
-				</nav>
-
-				<nav class="navigation vertical__nav mobimenu" aria-label="<?php _e( 'Mobile navigation', 'myfirsttheme' ); ?>">
+				<nav id="main-menu" class="navigation responsive-menu horizontal__nav mainmenu" aria-label="<?php _e( 'Main navigation', 'myfirsttheme' ); ?>">
 					<?php
 			            wp_nav_menu( array(
 			                'theme_location' => 'main-navigation',

@@ -129,6 +129,18 @@
 		transition: all 277ms linear;
 	}
 
+	.sm .line {
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: var(--color-white);
+		transition: all 277ms linear;
+	}
+
+	.lap .line {
+		display: none;
+	}
+
 	.change .line-1 {
 		transform: rotateZ(-45deg) translate(-8px, 6px);
 	}
@@ -160,7 +172,7 @@
 
 	.vertical__nav li {
 		list-style: none;
-		margin: 0 0 15px 0;
+		margin: 0 0 2rem 0;
 	}
 
 	.vertical__nav ul.sub-menu {
@@ -184,6 +196,10 @@
 
 	body.mobimenu-is-open {
 		overflow-y: hidden;
+	}
+
+	.sm .current-menu-item {
+	    box-shadow: none;
 	}
 	
 	

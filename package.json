@@ -16,7 +16,7 @@
     "@babel/register": "^7.9.0",
     "accordion-js": "^2.8.0",
     "babel-loader": "^8.1.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "core-js": "^3.6.4",
     "css-loader": "^3.4.2",
     "del": "^5.1.0",
@@ -29,10 +29,11 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-zip": "^5.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "lazyload": "^2.0.0-rc.2",
     "micromodal": "^0.4.6",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
+    "postcss-preset-env": "^6.7.0",
     "siema": "^1.5.1",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.42.1",
@@ -40,7 +41,10 @@
     "yargs": "^15.3.1"
   },
   "dependencies": {
+    "babel-plugin-import-postcss": "^2.0.0",
     "enquire-js": "^0.2.1",
-    "sass-fonts": "^3.0.2"
+    "postcss-uncss": "^0.17.0",
+    "sass-fonts": "^3.0.2",
+    "uncss": "^0.17.3"
   }
 }

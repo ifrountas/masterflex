@@ -6,7 +6,7 @@
 	<div class="container-fluid">
 		<div class="row middle-sm">
 			<div class="col-sm-12 social">
-				<?php echo skyrocket_get_social_media(); ?>
+				<p><?php _e('Time Schedule', 'myfirsttheme'); ?></p>
 			</div>
 		</div>
 	</div>

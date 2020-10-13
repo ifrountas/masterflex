@@ -19,9 +19,3 @@
 
  	// CSS and Javascript enqueues.
    require_once __DIR__ . '/functions/template-tags.php';
-
-    
-   // CSS and Javascript enqueues.
-   require_once __DIR__ . '/functions/customizer.php';
-   require_once __DIR__ . '/functions/custom-controls.php';
-   require_once __DIR__ . '/functions/custom-header.php';

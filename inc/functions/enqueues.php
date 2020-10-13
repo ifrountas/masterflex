@@ -43,8 +43,6 @@
 	}
 
 	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_css', 999 );
-	add_action( 'customize_controls_print_styles', 'myfirsttheme_enqueue_css' );
-
 
 
 	/**
@@ -83,19 +81,5 @@
 	}
 
 	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_ie_css_vars_compatibility', 999 );
-
-
-	/**
-	 * Enqueue Javascript postMessage handlers for the Customizer.
-	 *
-	 * Binds JS handlers to make the Customizer preview reload changes asynchronously.
-	 *
-	 * @since myfirsttheme 1.0
-	 */
-	function myfirsttheme_customize_preview_js() {
-		wp_enqueue_script( 'myfirsttheme-customizer', get_template_directory_uri() . '/assets/js/theme-customizer.js', array( 'customize-preview' ), '20141120', true );
-	}
-	add_action( 'customize_preview_init', 'myfirsttheme_customize_preview_js' );
-
  	
 ?>

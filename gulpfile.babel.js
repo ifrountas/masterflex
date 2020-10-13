@@ -11,7 +11,6 @@ import named from 'vinyl-named';
 import browserSync from 'browser-sync';
 import zip from 'gulp-zip';
 import replace from 'gulp-replace';
-import uncss from 'postcss-uncss';
 import info from './package.json';
 
 const server = browserSync.create();
@@ -22,7 +21,6 @@ const paths = {
     styles: {
         src:  [
             'src/assets/scss/style.main.scss',
-            'src/assets/scss/customizer.scss',
         ],
         dest: 'assets/css'
     },
@@ -38,9 +36,6 @@ const paths = {
         src: [
             'src/assets/js/functions.js',
             'src/assets/js/function.ie11.vars.js',
-            'src/assets/js/theme-customizer.js',
-            'src/assets/js/wp-color-picker-alpha.js',
-            'src/assets/js/customizer.js'
         ],
         dest: 'assets/js'
     },

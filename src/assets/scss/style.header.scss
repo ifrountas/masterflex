@@ -1,24 +1,17 @@
-.main__header {
-	position: relative;
-	padding: 1rem 0;
+.social ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
 }
 
-	.site-logo {
-
-		.site__title-text {
-			line-height: var(--heading-line-height);
-			font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
-		}
-
-		.site__title-desc {
-			color: var(--color-white);
-			margin-top: 5px;
-		}
-
-			.site__title-text a {
-				text-decoration: none;
-			}
+	.social ul li a {
+		font-size: 20px;
 	}
+
+.site__title-text a,
+.social ul li a {
+	text-decoration: none;
+}
 
 
 /* Only stick if you can fit */
@@ -26,6 +19,6 @@
 	.main__header {
 		position: sticky;
 		top: 0;
-		z-index: 2;
+		z-index: 1;
 	}
 }

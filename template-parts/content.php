@@ -31,7 +31,7 @@
 
 	<?php myfirsttheme_post_thumbnail(); ?>
 
-	<div class="entry-content text">
+	<div class="entry-content">
 		<?php
 		the_excerpt( sprintf(
 			wp_kses(

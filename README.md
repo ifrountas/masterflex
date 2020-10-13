@@ -13,6 +13,21 @@ $ cd myfirsttheme
 $ npm install
 ```
 
+## Automated Startup 
+When you run `npm install` the first time, you will trigger the automated startup. 
+
+**"What is the name of your theme?"**
+
+The provided answer is used to update style.css with your theme name.
+
+**"What is the namespace of your theme?"**
+
+This will replace all of the function namespaces and translation textdomains with your selected namespace.
+
+**"What is your local URL for this install?"**
+
+This URL is used to configure BrowserSync to work with your local environment.
+
 ## Commands
 `npm run start` - watches all JS, CSS and image source files for changes. 
 

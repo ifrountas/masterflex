@@ -13,3 +13,10 @@ $ cd myfirsttheme
 $ npm install (or npm install)
 ```
 
+## Commands
+`npm run start` - watches all JS, CSS and image source files for changes. 
+
+`npm run build` - compiles all JS, CSS and image source files localy.
+
+`npm run compress` - compiles and minifies all JS, CSS and image source files in a new theme tag
+

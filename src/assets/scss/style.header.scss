@@ -3,16 +3,6 @@
 	padding: 1rem 0;
 }
 
-.social ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 5px;
-}
-
-	.social ul li a {
-		font-size: 20px;
-	}
-
 	.site-logo {
 
 		.site__title-text {
@@ -25,19 +15,11 @@
 			margin-top: 5px;
 		}
 
-			.site__title-text a,
-			.social ul li a {
+			.site__title-text a {
 				text-decoration: none;
 			}
 	}
 
-ul.social-icons {
-    padding-left: 0;
-}
-
-.social p {
-    color: var(--color-white);
-}
 
 /* Only stick if you can fit */
 @media (min-height: 800px) {

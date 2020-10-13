@@ -2,16 +2,6 @@
 
 <!-- PAGE HEADER -->
 
-<section class="top__header bg__black">
-	<div class="container-fluid">
-		<div class="row middle-sm">
-			<div class="col-sm-12 social">
-				<p><?php _e('Time Schedule', 'myfirsttheme'); ?></p>
-			</div>
-		</div>
-	</div>
-</section>
-
 <header class="main__header bg__blue">
 
 	<div class="container-fluid">

@@ -41,7 +41,7 @@
         --gutter-compensation : calc((var(--grid-gutter) * 0.5) * -1);
         --vertical-rhythm     : 3em;
         
-        --font-sans-serif     : 'Roboto', sans-serif;
+        --font-sans-serif     : 'Inter var', Arial, sans-serif;
         --font-monospace      : Consolas, 'Courier New', monospace;
         --font-icon           : 'IcoFont' !important;
 
@@ -271,17 +271,6 @@
         background: rgb(245, 245, 245);
         padding: 0.5rem 1rem;
         border: 1px dotted rgb(165, 165, 165);
-    }
-
-    blockquote {
-        color: rgba(0,0,0,.8);
-        border: 2px solid #ffedbb;
-        background: #fff4d5;
-        border-radius: 6px;
-        font-weight: 500;
-        margin: 1.5rem 0;
-        padding: 1.5rem;
-        line-height: 1.6;
     }
 
     @font-face {

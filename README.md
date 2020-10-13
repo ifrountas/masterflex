@@ -10,7 +10,7 @@ From your `wp-content/themes` directory, run the following.
 ```bash
 $ git clone --single-branch --branch dev https://github.com/ifrountas/masterflex.git myfirsttheme
 $ cd myfirsttheme
-$ npm install (or npm install)
+$ npm install
 ```
 
 ## Commands

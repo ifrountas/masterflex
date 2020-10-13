@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node src/build/install",
+    "postinstall": "node build/install",
     "start": "gulp",
     "build": "gulp build_the_theme --prod",
     "compress": "gulp compress_the_theme --prod"

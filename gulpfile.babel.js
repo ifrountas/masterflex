@@ -40,7 +40,7 @@ const paths = {
         dest: 'assets/js'
     },
     package: {
-        src: ['**/*', '!.vscode', '!node_modules{,/**}', '!theme_versions{,/**}', '!src{,/**}', '!.babelrc', '!.gitignore', '!gulpfile.babel.js', '!package.json', '!package-lock.json'],
+        src: ['**/*', '!.vscode', '!node_modules{,/**}', '!theme_versions{,/**}', '!src{,/**}', '!.babelrc', '!.gitignore', '!gulpfile.babel.js', '!package.json', '!package-lock.json', '!build{,/**}'],
         createdest: `theme_versions/${`${info.name}`}`,
         zipdest: `theme_versions/${`${info.name}`}{,/**}`,
         finaldest: 'theme_versions'

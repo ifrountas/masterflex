@@ -72,8 +72,8 @@ function changeNamespace(themeNamespace) {
   }
   const nameSpace = themeNamespace.toLowerCase().split(' ').join('_');
   const options = {
-    files: ['style.css', '**/*.php'],
-    from: /theme_namespace/g,
+    files: ['style.css', '**/*.php', 'package.json'],
+    from: /myfirsttheme/g,
     to: nameSpace,
   };
   try {

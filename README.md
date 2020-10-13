@@ -33,5 +33,5 @@ This URL is used to configure BrowserSync to work with your local environment.
 
 `npm run build` - compiles all JS, CSS and image source files localy.
 
-`npm run compress` - compiles and minifies all JS, CSS and image source files in a new theme tag. Your theme is the .zip inside folder theme_versions.
+`npm run compress` - building a new theme tag.  Your theme is the .zip file inside folder `/theme_versions`.
 

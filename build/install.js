@@ -17,17 +17,17 @@ async function startTheme() {
     {
         type: 'input',
         name: 'themeName',
-        message: 'What is the name of your theme? (Example: My New Theme)',
+        message: 'What is the name of your theme? (Example: MasterFlexWP)',
     },
     {
         type: 'input',
         name: 'themeNamespace',
-        message: 'What is the namespace of your theme? (Example: my_new_theme)',
+        message: 'What is the namespace of your theme? (Example: masterflex)',
     },
     {
         type: 'input',
         name: 'themeLocalUrl',
-        message: 'What is your local URL for this install? (Example: https://localhost/myfirsttheme)',
+        message: 'What is your local URL for this install? (Example: https://localhost/masterflex)',
     },
     ];
     try {

@@ -122,13 +122,6 @@
 		padding: 0;
 	}
 
-	.line {
-		width: 100%;
-		height: 3px;
-		background-color: var(--color-white);
-		transition: all 277ms linear;
-	}
-
 	.sm .line {
 		display: block;
 		width: 100%;
@@ -136,7 +129,8 @@
 		background-color: var(--color-white);
 		transition: all 277ms linear;
 	}
-
+	
+	.line,
 	.lap .line {
 		display: none;
 	}

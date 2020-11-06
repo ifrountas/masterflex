@@ -49,7 +49,7 @@ const paths = {
 
 export const serve = (done) => {
     server.init({
-        proxy: "http://localhost/myfirsttheme"
+        proxy: "https://myfirsttheme.local:8890"
     });
     done();
 }

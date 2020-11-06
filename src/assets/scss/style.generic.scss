@@ -1,19 +1,9 @@
-.grid__box {
-	padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(68, 53, 255, 0.7);
-    border: 1px solid rgba(68, 53, 255, 1);
-}
-
-.entry-header {
-	padding: 6rem 0;
-}
-
 .sm .entry-header {
 	padding: 2.5rem 0;
 }
 
-.lap .entry-header {
+.entry-header,
+.lap .entry-header  {
 	padding: 6rem 0;
 }
 

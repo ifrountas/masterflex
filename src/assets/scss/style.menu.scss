@@ -146,7 +146,7 @@
 	
 	.mobimenu {
 		width: 100vw;
-		height: 100%;
+		height: 100vh;
 		background-color: var(--color-blue);
 		position: fixed;
 		top: 0;
@@ -185,8 +185,8 @@
 		z-index: 0;
 	}
 
-	body.mobimenu-is-open {
-		overflow-y: hidden;
+	.mobimenu-is-open {
+		overflow: hidden;
 	}
 
 	.sm .current-menu-item {

@@ -88,10 +88,7 @@
 		display: flex;
 	}
 
-	.lap .mobimenu {
-		display: none;
-	}
-
+	.lap .mobimenu,
 	.mainmenu {
 		display: none;
 	}
@@ -148,12 +145,12 @@
 	}
 	
 	.mobimenu {
-		width: 300px;
+		width: 100vw;
 		height: 100%;
 		background-color: var(--color-blue);
 		position: fixed;
 		top: 0;
-		right: -300px;
+		right: -100vw;
 		justify-content: center;
 		align-items: center;
 		transition: right 500ms cubic-bezier(1, 0, 0, 1);

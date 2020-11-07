@@ -923,7 +923,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/iakovos/Sites/myfirsttheme/wp-content/themes/myfirsttheme/src/assets/js/function.ie11.vars.js */"./src/assets/js/function.ie11.vars.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\myfirsttheme\wp-content\themes\myfirsttheme\src\assets\js\function.ie11.vars.js */"./src/assets/js/function.ie11.vars.js");
 
 
 /***/ })

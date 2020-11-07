@@ -2,31 +2,13 @@
     margin-top: 1.5rem;
 }
 
-footer.entry-footer {
+.entry-footer {
     margin-top: 3rem;
 }
 
-nav.navigation.post-navigation,
-div#comments {
+nav.navigation.post-navigation {
     flex: 0 0 100%;
     margin-top: 3rem;
-}
-
-p.comment-form-comment {
-    margin-top: 1.5rem;
-}
-
-    p.comment-form-comment label {
-        display: block;
-    }
-
-#comments textarea {
-    width: 100%;
-    padding: 1rem;
-}
-
-#comments p.form-submit {
-    margin-top: 1.5rem;
 }
 
 .nav-links {

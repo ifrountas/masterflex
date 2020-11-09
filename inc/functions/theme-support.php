@@ -1,22 +1,23 @@
 <?php
 
-	add_theme_support( 'custom-logo' );
-	add_theme_support( 'post-thumbnails' );
+	function myfirsttheme_theme_support() {
 
-	function myfirsttheme_logo_setup() {
+		add_theme_support( 'custom-logo' );
+		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'title-tag' );
 
 		$defaults = array(
-		'height'      => 100,
-		'width'       => 400,
-		'flex-height' => true,
-		'flex-width'  => true,
-		'header-text' => array( 'site-title', 'site-description' ),
+			'height'      => 100,
+			'width'       => 400,
+			'flex-height' => true,
+			'flex-width'  => true,
+			'header-text' => array( 'site-title', 'site-description' ),
 		);
 
 		add_theme_support( 'custom-logo', $defaults );
 	}
 
-	add_action( 'after_setup_theme', 'myfirsttheme_logo_setup' );
+	add_action( 'after_setup_theme', 'myfirsttheme_theme_support' );
 
 
 
@@ -39,4 +40,10 @@
 
 		return $site_title;
 	}
+
+	function some_name(){
+		
+	}
+	
+	add_action( 'after_setup_theme', 'some_name' );
 

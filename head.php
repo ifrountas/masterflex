@@ -16,8 +16,6 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title><?php wp_title('', true); ?></title>
-
     <meta name="Author"    content="<?php bloginfo( 'name' ); ?> &copy;" />
     <meta name="Owner"     content="<?php bloginfo( 'name' ); ?> &copy;" />
     <meta name="Publisher" content="<?php bloginfo( 'name' ); ?> &copy;" />

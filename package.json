@@ -50,6 +50,7 @@
     "enquire-js": "^0.2.1",
     "postcss-uncss": "^0.17.0",
     "sass-fonts": "^3.0.2",
-    "uncss": "^0.17.3"
+    "uncss": "^0.17.3",
+    "web-vitals": "^0.2.4"
   }
 }

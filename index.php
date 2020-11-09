@@ -7,6 +7,7 @@
 
 get_header();
 ?>
+	<?php do_action( 'myfirsttheme_before_main' ); ?>
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-sm-12">
@@ -45,14 +46,6 @@ get_header();
 
 		endif;
 		?>
-
-		<div class="slideshow">
-			<img src="https://cdn.pixabay.com/photo/2020/04/03/15/27/flower-meadow-4999277_1280.jpg"/>
-			<img src="https://cdn.pixabay.com/photo/2020/03/18/05/29/swimming-pool-4942724_1280.jpg"/>
-		</div>
-
-		<button class="slide-prev btn small red">prev</button>
-		<button class="slide-next btn small red">next</button>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

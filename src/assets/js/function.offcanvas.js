@@ -47,3 +47,14 @@ menuIcon.addEventListener('click', ()=> {
 	menuIcon.classList.toggle('change');
 	sitebody.classList.toggle('mobimenu-is-open');
 });
+
+// Create sub menus
+function clickedMenu(){
+    if(this.querySelector('.mobimenu .sub-menu')){
+		this.classList.toggle('sub-menu-active');
+    }
+}
+
+document.querySelectorAll('.menu-item-has-children').forEach(function(el){
+	el.addEventListener('click', clickedMenu);
+});

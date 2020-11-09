@@ -28,7 +28,7 @@
         --font-scale          : 1.1;
         
         --root-font-size      : 10px;
-        --base-font-size      : 1.6rem;
+        --base-font-size      : 1.8rem;
         --base-line-height    : 1.5;
         --text-line-height    : 1.5;
         --heading-line-height : 1.3;
@@ -162,29 +162,25 @@
 
     .text {
         line-height: var(--text-line-height);
-    }
-
-    .text>h1+*,
-    .text>h2+*,
-    .text>h3+*,
-    .text>h4+*,
-    .text>h5+*,
-    .text>h6+* {
-        margin-top: calc(.333*var(--text-rhythm));
-    }
-
-    .text> * + * {
-        margin-top: calc(var(--text-rhythm)/2);
+        > {
+            h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
+                margin-top: calc(.333*var(--text-rhythm));
+            }
+      
+        * + * {
+                margin-top: calc(var(--text-rhythm)/2);
+            }
+        }
+      
+        p {
+            font-weight: 300;
+        }
+      
+        ul li {
+            padding-bottom: 1.5rem;
+        }
     }
     
-    .text p {
-        font-weight: 300;
-    }
-
-    .text ul li {
-        padding-bottom: 1.5rem;
-    }
-
     .font__weight-900 {
         font-weight: 900;
     }

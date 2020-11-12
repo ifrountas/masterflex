@@ -39,6 +39,7 @@
     "node-sass": "^4.14.1",
     "postcss-preset-env": "^6.7.0",
     "replace-in-file": "^6.1.0",
+    "scrollmagic": "^2.0.8",
     "siema": "^1.5.1",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.42.1",

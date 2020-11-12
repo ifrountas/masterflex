@@ -1,4 +1,14 @@
 <?php
+	
+	/**
+     * Load Google Font Link
+     * @return string
+     */
+	function myfirsttheme_google_font() {
+		$font_link = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,500&display=swap";
+
+		return $font_link;
+	}
 
 
 	/**
@@ -7,7 +17,7 @@
      */
 	function myfirsttheme_register_fonts() {
 
-        wp_register_style( 'myfirsttheme-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,500&display=swap', array(), '', 'all' );
+        wp_register_style( 'myfirsttheme-fonts', myfirsttheme_google_font(), array(), '', 'all' );
 	}
 
 	add_action( 'init', 'myfirsttheme_register_fonts', 1 );
@@ -19,7 +29,9 @@
      */
 	function myfirsttheme_enqueue_fonts() {
 		wp_enqueue_style( 'myfirsttheme-fonts' );  ?>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin /> <?php
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+		<link rel="preload" as="style" href="<?php echo myfirsttheme_google_font(); ?>" />
+    	<link rel="stylesheet" href="<?php echo myfirsttheme_google_font(); ?>" media="print" onload="this.media='all'" /><?php
 	}
 
 	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_fonts', 1 );

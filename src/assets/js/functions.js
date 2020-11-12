@@ -4,4 +4,4 @@ import './function.offcanvas.js';
 import './function.lazyload.js'; 
 import './function.modal.js';
 import './function.accordion.js';
-import './function.scrollmagic.js';
+import './function.lax.js';

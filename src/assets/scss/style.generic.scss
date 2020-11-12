@@ -7,13 +7,8 @@
 	padding: 6rem 0;
 }
 
-.sm .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-    max-width:calc(100vw - 2 * var(--half-grid-gutter));
-}
-
-.lap .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
-.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-    max-width:calc(var(--container-width) - 2 * var(--half-grid-gutter));
+.wp-caption {
+    max-width: 100%;
 }
 
 img {

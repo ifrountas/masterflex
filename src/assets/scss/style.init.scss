@@ -1,7 +1,6 @@
     /* General Variables */
 
-	:root,
-    .sm {
+	:root {
         --red                 : 202,  28,  37;
         --green               : 183, 191,  29;
         --blue                :   4,  57,  94;
@@ -22,14 +21,17 @@
         --color-text          : var(--color-black); 
         --color-text-link     : var(--color-orange); 
 
-        --font-scale          : 1.1;
-        
+        --font-scale          : 1.2;
+
         --root-font-size      : 10px;
-        --base-font-size      : 1.8rem;
+        --base-font-size      : 1.6rem;
         --base-line-height    : 1.5;
-        --text-line-height    : 1.5;
-        --heading-line-height : 1.3;
-        --text-rhythm         : 2rem;
+        --text-line-height    : 1.7;
+        --heading-line-height : 1.2;
+
+        --text-rhythm         : 5rem;
+        --grid-gutter         : 2em;
+        --vertical-rhythm     : 5rem;
 
         --container-width     : 1024px;
         --container-fluid     : 100%;
@@ -42,6 +44,16 @@
         --font-sans-serif     : 'Roboto', sans-serif;
         --font-monospace      : Consolas, 'Courier New', monospace;
         --font-icon           : 'IcoFont' !important;
+    }
+
+    .sm {
+        --font-scale          : 1.1;
+        
+        --base-font-size      : 1.8rem;
+        --base-line-height    : 1.5;
+        --text-line-height    : 1.5;
+        --heading-line-height : 1.3;
+        --text-rhythm         : 2rem;
 
     }
 
@@ -58,7 +70,7 @@
     }
 
     .lap {
-        --font-scale          : 1.15;
+        --font-scale          : 1.2;
         --base-font-size      : 1.6rem;
         --base-line-height    : 1.5;
         --text-line-height    : 1.7;
@@ -130,11 +142,11 @@
     }
 
     h1 {
-        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
     }
 
     h2 {
-        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+        font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
     }
 
     h3 {
@@ -254,4 +266,33 @@
         line-height: 1;
         font-feature-settings: "liga";
         -webkit-font-smoothing: antialiased;
+    }
+
+    [data-beat-topper] {
+        opacity: 0;
+        visibility: hidden;
+        perspective: 3000px;
+        -webkit-animation: fadein .6s ease forwards;
+        animation: fadein .6s ease forwards;
+    }
+
+    [data-beat="1"] {
+        -webkit-animation-delay: .35s!important;
+        animation-delay: .35s!important;
+    }
+
+    [data-beat="2"] {
+        -webkit-animation-delay: .7s!important;
+        animation-delay: .7s!important;
+    }
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+        }
+        100% {
+            opacity: 1;
+            visibility: visible;
+        }
     }

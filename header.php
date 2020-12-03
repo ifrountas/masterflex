@@ -9,14 +9,14 @@
 		<div class="row middle-sm">
 
 			<div class="col-sm-9 col-lap-4">
-				<div class="site-logo">
+				<div class="site-logo" data-beat="1" data-beat-topper="1">
 					<?php echo myfirsttheme_display_site_title(); ?>
 	            </div>
 			</div>
 			
 			<div class="col-sm-3 col-lap-8">
 
-				<nav id="main-menu" class="navigation responsive-menu horizontal__nav mainmenu" aria-label="<?php _e( 'Main navigation', 'myfirsttheme' ); ?>">
+				<nav id="main-menu" class="navigation responsive-menu horizontal__nav mainmenu" aria-label="<?php _e( 'Main navigation', 'myfirsttheme' ); ?>" data-beat="2" data-beat-topper="2">
 					<?php
 			            wp_nav_menu( array(
 			                'theme_location' => 'main-navigation',

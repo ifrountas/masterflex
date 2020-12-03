@@ -7,7 +7,7 @@
 
 		.site__title-text {
 			line-height: calc(var(--heading-line-height) - 0.4);
-			font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+			font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
 		}
 
 		.site__title-desc {

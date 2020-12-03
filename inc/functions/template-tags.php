@@ -133,11 +133,6 @@ if ( ! function_exists( 'myfirsttheme_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-			<?php /*
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-				<img class="lazyload" src="" data-src="<?php the_post_thumbnail_url('post-thumbnail'); ?>"/>
-			</a>
-			*/ ?>
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php the_post_thumbnail('post-thumbnail'); ?>
 			</a>

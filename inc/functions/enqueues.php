@@ -4,7 +4,7 @@
      * Load Google Font Link
      * @return string
      */
-	function myfirsttheme_google_font() {
+	function ilnews_google_font() {
 		$font_link = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,500&display=swap";
 
 		return $font_link;
@@ -12,40 +12,40 @@
 
 
 	/**
-     * Register myfirsttheme fonts
+     * Register ilnews fonts
      * @return void
      */
-	function myfirsttheme_register_fonts() {
+	function ilnews_register_fonts() {
 
-        wp_register_style( 'myfirsttheme-fonts', myfirsttheme_google_font(), array(), '', 'all' );
+        wp_register_style( 'ilnews-fonts', ilnews_google_font(), array(), '', 'all' );
 	}
 
-	add_action( 'init', 'myfirsttheme_register_fonts', 1 );
+	add_action( 'init', 'ilnews_register_fonts', 1 );
 
 	
 	/**
-     * Enqueue myfirsttheme fonts.
+     * Enqueue ilnews fonts.
      * @return void
      */
-	function myfirsttheme_enqueue_fonts() {
-		wp_enqueue_style( 'myfirsttheme-fonts' );  ?>
+	function ilnews_enqueue_fonts() {
+		wp_enqueue_style( 'ilnews-fonts' );  ?>
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-		<link rel="preload" as="style" href="<?php echo myfirsttheme_google_font(); ?>" />
-    	<link rel="stylesheet" href="<?php echo myfirsttheme_google_font(); ?>" media="print" onload="this.media='all'" /><?php
+		<link rel="preload" as="style" href="<?php echo ilnews_google_font(); ?>" />
+    	<link rel="stylesheet" href="<?php echo ilnews_google_font(); ?>" media="print" onload="this.media='all'" /><?php
 	}
 
-	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_fonts', 1 );
+	add_action( 'wp_enqueue_scripts', 'ilnews_enqueue_fonts', 1 );
 	
 
 
  	/**
-     * Enqueue myfirsttheme specific CSS.
+     * Enqueue ilnews specific CSS.
      * @return void
      */
-	function myfirsttheme_enqueue_css() {
+	function ilnews_enqueue_css() {
        
 		$css_files = array(
-			array( 'id' => 'myfirsttheme-css',  'file' => '/assets/css/style.main.css' )
+			array( 'id' => 'ilnews-css',  'file' => '/assets/css/style.main.css' )
 		);
 
 	 	foreach( $css_files as $css ) {
@@ -54,19 +54,19 @@
 
 	}
 
-	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_css', 999 );
+	add_action( 'wp_enqueue_scripts', 'ilnews_enqueue_css', 999 );
 
 
 	/**
      * Enqueue theme specific Js.
      * @return void
      */
-	function myfirsttheme_enqueue_js() {
+	function ilnews_enqueue_js() {
 
 	 	$in_footer = true;
 
 	 	$js_list = array(
-			array( 'id' => 'myfirsttheme-functions', 'file' => '/assets/js/functions.js',  'deps' => array('jquery'), 'place' => $in_footer ),
+			array( 'id' => 'ilnews-functions', 'file' => '/assets/js/functions.js',  'deps' => array('jquery'), 'place' => $in_footer ),
         );
 
         foreach( $js_list as $js ) {
@@ -74,7 +74,7 @@
         }
 	}
 
-	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_js', 999 );
+	add_action( 'wp_enqueue_scripts', 'ilnews_enqueue_js', 999 );
 
 
 
@@ -82,7 +82,7 @@
      * Enqueue theme compatibility for css vars on Internet Explorer 11
      * @return void
      */
-	function myfirsttheme_enqueue_ie_css_vars_compatibility() {
+	function ilnews_enqueue_ie_css_vars_compatibility() {
 
 		$css_vars_ie = get_template_directory_uri() . '/assets/js/function.ie11.vars.js';
 
@@ -92,6 +92,6 @@
 
 	}
 
-	add_action( 'wp_enqueue_scripts', 'myfirsttheme_enqueue_ie_css_vars_compatibility', 999 );
+	add_action( 'wp_enqueue_scripts', 'ilnews_enqueue_ie_css_vars_compatibility', 999 );
  	
 ?>

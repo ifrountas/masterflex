@@ -5,7 +5,7 @@
      * 
      * @return void
      */
-    function myfirsttheme_register_menus () {
+    function ilnews_register_menus () {
 
         register_nav_menus( 
             array(
@@ -16,6 +16,6 @@
 
     }
 
-    add_action( 'init', 'myfirsttheme_register_menus' );
+    add_action( 'init', 'ilnews_register_menus' );
 
 ?>

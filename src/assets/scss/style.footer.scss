@@ -1,7 +1,15 @@
 footer.footer {
+	padding: var(--vertical-rhythm) 0 0 0;
+}
+
+.follow-us {
     padding: var(--vertical-rhythm) 0;
 }
 
-.lap footer.footer {
-	margin-top: 6rem;
+.footer-menu ul li a {
+	color: var(--color-white);
+}
+
+.site-info p {
+	margin: 2rem 0;
 }

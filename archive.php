@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package myfirsttheme
+ * @package ilnews
  */
 
 get_header();

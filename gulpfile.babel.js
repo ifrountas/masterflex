@@ -49,7 +49,7 @@ const paths = {
 
 export const serve = (done) => {
     server.init({
-        proxy: "http://localhost/ilioupolinews"
+        proxy: "http://localhost/myfirsttheme"
     });
     done();
 }

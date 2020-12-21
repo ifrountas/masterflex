@@ -2,12 +2,12 @@
 /**
  * The main template file
  *
- * @package ilnews
+ * @package myfirsttheme
  */
 
 get_header();
 ?>
-	<?php do_action( 'ilnews_before_main' ); ?>
+	<?php do_action( 'myfirsttheme_before_main' ); ?>
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-sm-12">
@@ -37,7 +37,7 @@ get_header();
 			endwhile;
 
 			the_posts_navigation();
-			do_action('ilnews_after_pagination');
+			do_action('myfirsttheme_after_pagination');
 			
 
 		else :

@@ -1,29 +1,29 @@
 <?php
 
 // Fire all our initial functions at the start
-add_action('after_setup_theme','myfirsttheme_start', 16);
+add_action('after_setup_theme','ilnews_start', 16);
 
-function myfirsttheme_start() {
+function ilnews_start() {
 
     // launching operation cleanup
-    add_action('init', 'myfirsttheme_head_cleanup');
+    add_action('init', 'ilnews_head_cleanup');
 
     // remove pesky injected css for recent comments widget
-    add_filter( 'wp_head', 'myfirsttheme_remove_wp_widget_recent_comments_style', 1 );
+    add_filter( 'wp_head', 'ilnews_remove_wp_widget_recent_comments_style', 1 );
 
     // clean up comment styles in the head
-    add_action('wp_head', 'myfirsttheme_remove_recent_comments_style', 1);
+    add_action('wp_head', 'ilnews_remove_recent_comments_style', 1);
 
     // clean up gallery output in wp
-    add_filter('gallery_style', 'myfirsttheme_gallery_style');
+    add_filter('gallery_style', 'ilnews_gallery_style');
 
     // cleaning up excerpt
-    add_filter('excerpt_more', 'myfirsttheme_excerpt_more');
+    add_filter('excerpt_more', 'ilnews_excerpt_more');
 
-} /* end myfirsttheme start */
+} /* end ilnews start */
 
 // The default wordpress head is a mess. Let's clean it up by removing all the junk we don't need.
-function myfirsttheme_head_cleanup() {
+function ilnews_head_cleanup() {
 	// Remove category feeds
 	// remove_action( 'wp_head', 'feed_links_extra', 3 );
 	// Remove post and comment feeds
@@ -42,17 +42,17 @@ function myfirsttheme_head_cleanup() {
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 	// Remove WP version
 	remove_action( 'wp_head', 'wp_generator' );
-} /* end myfirsttheme head cleanup */
+} /* end ilnews head cleanup */
 
 // Remove injected CSS for recent comments widget
-function myfirsttheme_remove_wp_widget_recent_comments_style() {
+function ilnews_remove_wp_widget_recent_comments_style() {
 	if ( has_filter('wp_head', 'wp_widget_recent_comments_style') ) {
 		remove_filter('wp_head', 'wp_widget_recent_comments_style' );
 	}
 }
 
 // Remove injected CSS from recent comments widget
-function myfirsttheme_remove_recent_comments_style() {
+function ilnews_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	if (isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments'])) {
 		remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
@@ -60,33 +60,33 @@ function myfirsttheme_remove_recent_comments_style() {
 }
 
 // Remove injected CSS from gallery
-function myfirsttheme_gallery_style($css) {
+function ilnews_gallery_style($css) {
 	return preg_replace("!<style type='text/css'>(.*?)</style>!s", '', $css);
 }
 
 // This removes the annoying […] to a Read More link
-function myfirsttheme_excerpt_more($more) {
+function ilnews_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-	return '<a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'myfirstthemewp') . get_the_title($post->ID).'">'. __('... Read more &raquo;', 'myfirstthemewp') .'</a>';
+	return '<a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'ilnewswp') . get_the_title($post->ID).'">'. __('... Read more &raquo;', 'ilnewswp') .'</a>';
 }
 
 // This is a modified the_author_posts_link() which just returns the link. This is necessary to allow usage of the usual l10n process with printf()
-function myfirsttheme_get_the_author_posts_link() {
+function ilnews_get_the_author_posts_link() {
 	global $authordata;
 	if ( !is_object( $authordata ) )
 		return false;
 	$link = sprintf(
 		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
 		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
-		esc_attr( sprintf( __( 'Posts by %s', 'myfirstthemewp' ), get_the_author() ) ), // No further l10n needed, core will take care of this one
+		esc_attr( sprintf( __( 'Posts by %s', 'ilnewswp' ), get_the_author() ) ), // No further l10n needed, core will take care of this one
 		get_the_author()
 	);
 	return $link;
 }
 
 
-function myfirsttheme_disable_wp_emoji() {
+function ilnews_disable_wp_emoji() {
 
 	// all actions related to emojis
 	remove_action( 'admin_print_styles', 'print_emoji_styles' );
@@ -98,16 +98,16 @@ function myfirsttheme_disable_wp_emoji() {
 	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 
 	// filter to remove TinyMCE emojis
-	add_filter( 'tiny_mce_plugins', 'myfirsttheme_disable_emoji_tinymce' );
+	add_filter( 'tiny_mce_plugins', 'ilnews_disable_emoji_tinymce' );
 
 	// filter to remove DNS prefetch
 	add_filter( 'emoji_svg_url', '__return_false' );
 
 }
 
-add_action( 'init', 'myfirsttheme_disable_wp_emoji' );
+add_action( 'init', 'ilnews_disable_wp_emoji' );
 
-function myfirsttheme_disable_emoji_tinymce( $plugins ) {
+function ilnews_disable_emoji_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
 		return array_diff( $plugins, array( 'wpemoji' ) );
 	} else {

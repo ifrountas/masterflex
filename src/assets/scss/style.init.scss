@@ -1,22 +1,23 @@
     /* General Variables */
 
 	:root {
-        --red                 : 202,  28,  37;
-        --green               : 183, 191,  29;
-        --blue                :   4,  57,  94;
-        --white               : 255, 255, 255;
         --gray-light          : 200, 200, 200;
         --gray-light-x        : 230, 230, 230;
         --gray                : 100, 100, 100;
-        --black               :  21,  21,  21;
-        --orange              : 255, 185, 101;
 
-        --color-red           : rgb(var(--red));
-        --color-green         : rgb(var(--green));
-        --color-blue          : rgb(var(--blue));
+        --wheat               : 224, 203, 168;
+        --egg                 : 243, 239, 224;
+        --sugar               : 239, 241, 237;
+        --white               : 255, 255, 255;
+        --black               :  21,  21,  21;
+        --orange              : 241, 145,  33;
+
+        --color-wheat         : rgb(var(--wheat));
         --color-white         : rgb(var(--white));
         --color-black         : rgb(var(--black));
         --color-orange        : rgb(var(--orange));
+        --color-gray          : rgb(var(--gray-light-x));
+        --color-egg           : rgb(var(--egg));
 
         --color-text          : var(--color-black); 
         --color-text-link     : var(--color-orange); 
@@ -33,7 +34,7 @@
         --grid-gutter         : 2em;
         --vertical-rhythm     : 5rem;
 
-        --container-width     : 1024px;
+        --container-width     : 1200px;
         --container-fluid     : 100%;
 
         --grid-gutter         : 1em;  
@@ -41,9 +42,9 @@
         --gutter-compensation : calc((var(--grid-gutter) * 0.5) * -1);
         --vertical-rhythm     : 3em;
         
-        --font-sans-serif     : 'Roboto', sans-serif;
-        --font-monospace      : Consolas, 'Courier New', monospace;
-        --font-icon           : 'IcoFont' !important;
+        --font-sans-serif     : 'AvertaStdPE-Thin';
+        --font-sans-bold      : 'AvertaStdPE-Bold';
+        --font-icon           : 'IcoFont';
     }
 
     .sm {
@@ -71,7 +72,7 @@
 
     .lap {
         --font-scale          : 1.2;
-        --base-font-size      : 1.6rem;
+        --base-font-size      : 1.8rem;
         --base-line-height    : 1.5;
         --text-line-height    : 1.7;
         --heading-line-height : 1.2;
@@ -83,8 +84,8 @@
     
     /* Set up the colors */
 
-    .color__blue {
-        color: var(--color-blue);
+    .color__wheat {
+        color: var(--color-wheat);
     }
 
     .color__white {
@@ -102,8 +103,16 @@
 
     /* Set up the background colors */
 
-    .bg__blue {
-        background: var(--color-blue);
+    .bg__orange {
+        background: var(--color-orange);
+    }
+
+    .bg__white {
+        background: var(--color-white);
+    }
+
+    .bg__black {
+        background: var(--color-black);
     }
 
 
@@ -136,9 +145,9 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: var(--font-sans-serif);
+        font-family: var(--font-sans-bold);
         line-height: var(--heading-line-height);
-        font-weight: 900;
+        -webkit-text-stroke: 0;
     }
 
     h1 {
@@ -181,18 +190,14 @@
                 margin-top: calc(var(--text-rhythm)/2);
             }
         }
-      
+
         p {
-            font-weight: 300;
+            -webkit-text-stroke: .025em currentColor;
         }
       
         ul li {
             padding-bottom: 1.5rem;
         }
-    }
-    
-    .font__weight-900 {
-        font-weight: 900;
     }
 
     a {
@@ -200,8 +205,12 @@
     }
 
     ::selection {
-        background-color: var(--color-blue);
-        color: var(--color-white);
+        background-color: var(--color-orange);
+        color: var(--color-black);
+    }
+
+    .is-rel {
+        position: relative;
     }
 
     .post-thumbnail img,
@@ -220,12 +229,6 @@
     }
 
     /* Usefull styles */
-
-    pre {
-        background: rgb(245, 245, 245);
-        padding: 0.5rem 1rem;
-        border: 1px dotted rgb(165, 165, 165);
-    }
 
     blockquote {
         color: rgba(0,0,0,.8);
@@ -246,16 +249,21 @@
           url('../fonts/icofont.woff2') format('woff2'),
           url('../fonts/icofont.woff') format('woff');
     }
-       
-    $icofont: 'IcoFont' !important;
-       
-    $fonts: (
-        'IcoFont': $icofont,
-    );
+
+    @font-face {
+        font-family: 'AvertaStdPE-Thin';
+        src: url('../fonts/AvertaStdPE-Thin/font.woff2') format('woff2'), url('../fonts/AvertaStdPE-Thin/font.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'AvertaStdPE-Bold';
+        src: url('../fonts/AvertaStdPE-Bold/font.woff2') format('woff2'), url('../fonts/AvertaStdPE-Bold/font.woff') format('woff');
+    }
       
     [class^="icofont-"],
-    [class*=" icofont-"] {
-        font-family: $icofont;
+    [class*=" icofont-"],
+    [class^="icofont"] {
+        font-family: var(--font-icon);
         font-style: normal;
         font-weight: normal;
         font-variant: normal;
@@ -268,31 +276,27 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    [data-beat-topper] {
-        opacity: 0;
-        visibility: hidden;
-        perspective: 3000px;
-        -webkit-animation: fadein .6s ease forwards;
-        animation: fadein .6s ease forwards;
+    .text-center,
+    .aligncenter {
+        text-align: center;
     }
 
-    [data-beat="1"] {
-        -webkit-animation-delay: .35s!important;
-        animation-delay: .35s!important;
+    .text-right {
+        justify-content: flex-end;
     }
 
-    [data-beat="2"] {
-        -webkit-animation-delay: .7s!important;
-        animation-delay: .7s!important;
+    .left {
+        float: left;
     }
 
-    @keyframes fadein {
-        0% {
-            opacity: 0;
-            visibility: hidden;
-        }
-        100% {
-            opacity: 1;
-            visibility: visible;
-        }
+    .right {
+        float: right;
+    }
+
+    .mb-10 {
+        margin-bottom: 1.5rem;
+    }
+
+    .spacer {
+        padding: var(--vertical-rhythm) 0;
     }

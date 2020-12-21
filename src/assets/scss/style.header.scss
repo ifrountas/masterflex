@@ -1,25 +1,104 @@
-.main__header {
-	position: relative;
-	padding: 1rem 0;
+.sm .site-logo {
+	max-width: 100px;
+	margin: initial;
 }
 
-	.site-logo {
+.lap .site-logo {
+	max-width: 150px;
+	margin: 0 auto;
+}
 
-		.site__title-text {
-			line-height: calc(var(--heading-line-height) - 0.4);
-			font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
-		}
+.site-logo {
 
-		.site__title-desc {
-			color: var(--color-white);
-			margin-top: 5px;
-		}
+	max-width: 150px;
+	margin: 0 auto;
 
-			.site__title-text a {
-				text-decoration: none;
-			}
+	.site__title-text {
+		line-height: calc(var(--heading-line-height) - 0.4);
+		font-size: calc(var(--base-font-size) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
 	}
 
+	.site__title-desc {
+		color: var(--color-white);
+		margin-top: 5px;
+	}
+
+		.site__title-text a {
+			text-decoration: none;
+		}
+
+	a.svg__logo {
+	    display: block;
+	    padding: 1rem 0;
+	}
+}
+
+
+.social__media li {
+    display: inline-block;
+
+  	a {
+  		display: inline-block;
+	    background: var(--color-orange);
+	    color: var(--color-white);
+   	 	width: 2em;
+	    height: 2em;
+	    line-height: 2em;
+	    border-radius: 1em;
+	    text-align: center;
+	    margin-right: 0.35em;
+	    font-size: 2rem;
+
+	    &:hover{
+	    	background-color: var(--color-black);
+	    }
+	}
+}
+
+.social__image-header img {
+    margin: 0 auto;
+	display: block;
+}
+
+.search__bar span {
+    padding: 1rem;
+    border-left: 1px solid var(--color-gray);
+    border-right: 1px solid var(--color-gray);
+    cursor: pointer;
+}
+
+.lap .border,
+.lap .brd-bt {
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.lap .border:before,
+.lap .brd-bt:before,
+.lap .border:after,
+.lap .brd-bt:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: var(--color-gray);
+    width: 100%;
+    bottom: -1px;
+}
+
+.lap .border:before,
+.lap .brd-bt:before {
+	right: 100%;
+}
+
+.lap .border:after,
+.lap .brd-bt:after {
+    width: calc(((100vw - var(--container-width))/2) - (var(--half-grid-gutter)*0.5));
+    left: 100%;
+}
+
+.search__bar span:hover {
+    background: var(--color-orange);
+    color: #f3efe0;
+}
 
 /* Only stick if you can fit */
 @media (min-height: 800px) {

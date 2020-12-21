@@ -1,0 +1,58 @@
+.sticky__main {
+    display: flex;
+    max-height: 465px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    a {
+        display: block;
+        width: 100%;
+
+        .image {
+            line-height: 0;
+            width: 70%;
+            float: right;
+
+            &:after{
+                content: '';
+                background-image: linear-gradient(to left, rgba(var(--black),0) 0, rgba(var(--black),0.45) 50%, rgba(var(--black),1) 100%);
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text-wrapper {
+            position: absolute;
+            width: 45%;
+            z-index: 2;
+            left: 50px;
+            top: 50px;
+        
+            .cat_head {
+                float: left;
+                font-size: 16px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+                transform: skewX(-15deg);
+                padding: 5px 13px;
+                text-transform: uppercase;
+                width: auto;
+
+                .inner {
+                    display: inline-block;
+                    transform: skewX(15deg);
+                    z-index: 1;
+                    line-height: 1.3;
+                }
+
+            }
+
+        }
+
+    }
+
+}

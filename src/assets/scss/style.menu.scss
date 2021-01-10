@@ -94,52 +94,8 @@
 		}
 	}
 
-	.sm .mobimenu {
-		display: flex;
-	}
-
-	.lap .mobimenu,
-	.sm .mainmenu {
-		display: none;
-	}
-
-	.lap .mainmenu {
-		display: block;
-	}
-
-	.sm .burger-menu {
-		width: 35px;
-		height: 30px;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 20px;
-		cursor: pointer;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		z-index: 999;
-	}
-
-	.lap .burger-menu {
-		display: none;
-	}
-
 	.mobimenu ul.main-navigation {
 		padding: 0;
-	}
-
-	.sm .line {
-		display: block;
-		width: 100%;
-		height: 3px;
-		background-color: var(--color-white);
-		transition: all 277ms linear;
-	}
-	
-	.line,
-	.lap .line {
-		display: none;
 	}
 
 	.change .line-1 {
@@ -244,8 +200,4 @@
 		position: relative;
 		z-index: 0;
 		overflow: hidden;
-	}
-
-	.sm .current-menu-item {
-	    box-shadow: none;
 	}

@@ -45,41 +45,7 @@
         --font-monospace      : Consolas, 'Courier New', monospace;
         --font-icon           : 'IcoFont' !important;
     }
-
-    .sm {
-        --font-scale          : 1.1;
-        
-        --base-font-size      : 1.8rem;
-        --base-line-height    : 1.5;
-        --text-line-height    : 1.5;
-        --heading-line-height : 1.3;
-        --text-rhythm         : 2rem;
-
-    }
-
-    .tab {
-        --font-scale          : 1.125;
-        --base-font-size      : 1.5rem;
-        --base-line-height    : 1.5;
-        --text-line-height    : 1.6;
-        --heading-line-height : 1.25;
-
-        --text-rhythm         : 3rem;
-        --grid-gutter         : 1.5em;
-        --vertical-rhythm     : 4rem;
-    }
-
-    .lap {
-        --font-scale          : 1.2;
-        --base-font-size      : 1.6rem;
-        --base-line-height    : 1.5;
-        --text-line-height    : 1.7;
-        --heading-line-height : 1.2;
-
-        --text-rhythm         : 5rem;
-        --grid-gutter         : 2em;
-        --vertical-rhythm     : 5rem;
-    }
+    
     
     /* Set up the colors */
 

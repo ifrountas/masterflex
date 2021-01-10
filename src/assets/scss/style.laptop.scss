@@ -1,5 +1,37 @@
 @media only screen and (min-width: 1024px) {
-    body{
-        background: rgb(73, 128, 0);
+    :root {
+        --font-scale          : 1.2;
+        --base-font-size      : 1.6rem;
+        --base-line-height    : 1.5;
+        --text-line-height    : 1.7;
+        --heading-line-height : 1.2;
+
+        --text-rhythm         : 5rem;
+        --grid-gutter         : 2em;
+        --vertical-rhythm     : 5rem;
+    }
+
+    .lap .mobimenu {
+		display: none;
+    }
+    
+    .mainmenu {
+		display: block;
+    }
+    
+    .burger-menu {
+		display: none;
+    }
+    
+    .line {
+		display: none;
+    }
+    
+    footer.footer {
+        margin-top: 6rem;
+    }
+
+    .entry-header  {
+        padding: 6rem 0;
     }
 }

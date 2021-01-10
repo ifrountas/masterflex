@@ -34,4 +34,16 @@
     .entry-header  {
         padding: 6rem 0;
     }
+
+    .modal__container {
+        width: 45vw;
+    }
+
+    .modal__container.small {
+        width: 500px;
+    }
+
+    .modal__container.large {
+        width: 85vw;
+    }
 }

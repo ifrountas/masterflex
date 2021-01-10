@@ -28,22 +28,6 @@
         overflow-y: auto;
         box-sizing: border-box;
     }
-
-    .sm .modal__container {
-        width: 100%;
-    }
-
-    .lap .modal__container {
-        width: 45vw;
-    }
-
-    .lap .modal__container.small {
-        width: 500px;
-    }
-
-    .lap .modal__container.large {
-        width: 85vw;
-    }
     
     .modal__header {
         display: flex;

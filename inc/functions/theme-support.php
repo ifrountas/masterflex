@@ -47,3 +47,36 @@
 	
 	add_action( 'after_setup_theme', 'some_name' );
 
+
+	
+	/**
+     * Add SVGs to the list of allowed mime types.
+     * 
+     * @param array $upload_mimes The existing allowed mime types.
+     * 
+     * @return array The enhanced allowed mime types.
+     */
+    function myfirsttheme_admin_add_svg_to_upload_mimes( $upload_mimes ) {
+
+        $upload_mimes['svg']  = 'image/svg+xml';
+        $upload_mimes['svgz'] = 'image/svg+xml';
+
+        return $upload_mimes;
+
+    }
+
+	add_filter('upload_mimes', 'korikis_admin_add_svg_to_upload_mimes');
+
+
+	
+    /**
+     * Echoes the contents of an SVG image of the media library. 
+     * @param [int] $svg_image_id The SVG image WordPress ID.
+     * @return void
+     */
+    function myfirsttheme_svg_get_contents( $svg_image_id ) {
+
+        echo file_get_contents( get_attached_file( $svg_image_id ) );
+
+    }
+

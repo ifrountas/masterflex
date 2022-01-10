@@ -9,7 +9,7 @@
     box-shadow: 0 1px 25px rgba(0,0,0, .1);
 
 	&.hide {
-		top: calc(var(--main-header-height) * -1.5);
+		top: calc(var(--main-header-height) * -2);
 		box-shadow: none;
 	}
 }

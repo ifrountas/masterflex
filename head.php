@@ -4,7 +4,20 @@
 
 <head>
 
+    <script type="text/javascript">
+        const nav = document.getElementsByClassName('main__header');
+        let lastScrollY = window.scrollY;
 
+        window.addEventListener("scroll", () => {
+            if (lastScrollY < window.scrollY) {
+            nav[0].classList.add("hide");
+            } else {
+            nav[0].classList.remove("hide");
+            }
+
+            lastScrollY = window.scrollY;
+        });
+    </script>
 
     <!--
     ================================================================================
@@ -29,6 +42,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimal-ui" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
     
 
     <!--

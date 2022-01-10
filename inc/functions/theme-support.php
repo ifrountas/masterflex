@@ -65,7 +65,7 @@
 
     }
 
-	add_filter('upload_mimes', 'korikis_admin_add_svg_to_upload_mimes');
+	add_filter('upload_mimes', 'myfirsttheme_admin_add_svg_to_upload_mimes');
 
 
 	

@@ -29,6 +29,8 @@
         --text-line-height    : 1.7;
         --heading-line-height : 1.2;
 
+        --main-header-height  : 50px;
+
         --text-rhythm         : 5rem;
         --grid-gutter         : 2em;
         --vertical-rhythm     : 5rem;
@@ -40,6 +42,8 @@
         --half-grid-gutter    : calc((var(--grid-gutter) * 0.5));
         --gutter-compensation : calc((var(--grid-gutter) * 0.5) * -1);
         --vertical-rhythm     : 3em;
+
+        --menu-padding        : 1rem;
         
         --font-sans-serif     : 'Roboto', sans-serif;
         --font-monospace      : Consolas, 'Courier New', monospace;

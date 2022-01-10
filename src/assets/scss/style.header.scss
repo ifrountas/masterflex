@@ -1,6 +1,17 @@
 .main__header {
-	position: relative;
-	padding: 1rem 0;
+	position: fixed;
+	padding: var(--menu-padding) 0;
+    height: var(--main-header-height);
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all .3s ease;
+    box-shadow: 0 1px 25px rgba(0,0,0, .1);
+
+	&.hide {
+		top: calc(var(--main-header-height) * -1.5);
+		box-shadow: none;
+	}
 }
 
 	.site-logo {
@@ -19,6 +30,8 @@
 				text-decoration: none;
 			}
 	}
+
+	
 
 
 // /* Only stick if you can fit */

@@ -1,7 +1,5 @@
 .main__header {
 	position: fixed;
-	padding: var(--menu-padding) 0;
-    height: var(--main-header-height);
     top: 0;
     width: 100%;
     z-index: 100;
@@ -11,6 +9,10 @@
 	&.hide {
 		top: calc(var(--main-header-height) * -2);
 		box-shadow: none;
+	}
+
+	.middle-sm {
+		height: var(--main-header-height);
 	}
 }
 
